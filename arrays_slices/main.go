@@ -5,6 +5,10 @@ import (
 )
 
 func main() {
+	/*
+		the length of arrays are also part of their type
+		so u cannot set an array of length 3 to that of length 10, even if they both contain integers
+	*/
 	a := [10]int32{1, 2, 3}
 	view := a[2:]
 

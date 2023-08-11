@@ -1,7 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
-	fmt.Println("emeka is here")
+	s := "nnaemeka onyeokoro"
+	for k, v := range s {
+		fmt.Printf("[%d] = %c\n", k, v)
+	}
+
+	// join strings together using slices
+	j := strings.Join([]string{"orange", "pineapple", "watermellon"}, ", ")
+	fmt.Println(j)
+
+	// split a string into an array
+	k := strings.Split(j, ", ")
+	fmt.Println(k)
 }
