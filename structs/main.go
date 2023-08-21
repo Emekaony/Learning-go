@@ -1,4 +1,4 @@
-package main
+package structs
 
 import (
 	"fmt"
@@ -53,4 +53,13 @@ func main() {
 
 	car1 := Car{color: "red", Benz: Benz{name: "GLE 450", year: 2023, owner: "Nnaemeka Onyeokoro"}}
 	car1.display()
+
+	// make a new student
+	tt := Student{
+		firstname:  "nnaemeka",
+		lastname:   "onyeoko",
+		studentID:  33,
+		bestFriend: "chizalu",
+	}
+	fmt.Println(tt.firstname)
 }

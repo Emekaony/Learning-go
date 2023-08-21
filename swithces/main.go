@@ -13,5 +13,4 @@ func main() {
 	default:
 		fmt.Println("not sure what it is")
 	}
-
 }
